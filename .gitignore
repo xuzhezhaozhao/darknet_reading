@@ -21,6 +21,8 @@ cfg/
 darknet
 .fuse*
 
+tags
+
 # OS Generated #
 .DS_Store*
 ehthumbs.db
