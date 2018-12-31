@@ -23,6 +23,7 @@ double get_wall_time()
 }
 */
 
+/* in seconds */
 double what_time_is_it_now() {
   struct timeval time;
   if (gettimeofday(&time, NULL)) {
@@ -303,6 +304,7 @@ void free_ptrs(void **ptrs, int n) {
   free(ptrs);
 }
 
+/* read a line, buffer 初始为 512，按需要每次扩大 2 倍 */
 char *fgetl(FILE *fp) {
   if (feof(fp)) return 0;
   size_t size = 512;
